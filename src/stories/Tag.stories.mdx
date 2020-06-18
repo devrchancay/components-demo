@@ -1,0 +1,31 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import { Tag } from "../components/tag";
+
+<Meta title="Components/Tag" component={Tag} />
+
+# MyComponent
+
+This is the `MyComponent`
+
+```jsx
+import { Tag } from "my-components";
+```
+
+<Preview withSource="open">
+  <Story name="MyComponent">
+    <Tag label="John" />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Tag} />
+
+## Using different Prop Name
+
+<Preview withSource="open">
+  <Story name="Different Prop Name">
+    <Tag label="Frances" />
+  </Story>
+</Preview>
