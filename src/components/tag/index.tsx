@@ -1,10 +1,15 @@
-import React, { ReactNode } from "react";
+import React from "react";
+import { TagContainer } from "./styles";
 
 interface TagsProps {
-  label?: ReactNode;
-  variant: "success" | "default" | "error";
+  label: string;
+  variant?: "success" | "default" | "error";
 }
 
 export const Tag: React.FC<TagsProps> = ({ label, variant = "default" }) => {
-  return <p className={variant}>{label}</p>;
+  return (
+    <TagContainer role="tag" variant={variant}>
+      {label}
+    </TagContainer>
+  );
 };

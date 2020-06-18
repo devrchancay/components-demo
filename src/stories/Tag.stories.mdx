@@ -4,16 +4,16 @@ import { Tag } from "../components/tag";
 
 <Meta title="Components/Tag" component={Tag} />
 
-# MyComponent
+# Tag
 
-This is the `MyComponent`
+This is the `Tag` component
 
 ```jsx
 import { Tag } from "my-components";
 ```
 
 <Preview withSource="open">
-  <Story name="MyComponent">
+  <Story name="Default">
     <Tag label="John" />
   </Story>
 </Preview>
@@ -22,10 +22,16 @@ import { Tag } from "my-components";
 
 <Props of={Tag} />
 
-## Using different Prop Name
+## Using different Props
 
 <Preview withSource="open">
-  <Story name="Different Prop Name">
-    <Tag label="Frances" />
+  <Story name="Sucess">
+    <Tag label="TODO OK" variant="success" />
+  </Story>
+</Preview>
+
+<Preview withSource="open">
+  <Story name="Error">
+    <Tag label="Error!!" variant="error" />
   </Story>
 </Preview>

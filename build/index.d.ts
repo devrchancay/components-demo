@@ -1,1 +1,1 @@
-export * from './components/MyComponent';
+export { Tag } from "./components/tag";
