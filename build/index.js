@@ -2698,7 +2698,7 @@ var templateObject_1;
 
 var Tag = function (_a) {
     var label = _a.label, _b = _a.variant, variant = _b === void 0 ? "default" : _b;
-    return React__default.createElement(TagContainer, { variant: variant }, label);
+    return (React__default.createElement(TagContainer, { role: "tag", variant: variant }, label));
 };
 
 exports.Tag = Tag;
