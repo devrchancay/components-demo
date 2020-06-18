@@ -1,6 +1,6 @@
 {
   "name": "universe-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My Component Library template",
   "main": "build/index.js",
   "module": "build/index.es.js",
